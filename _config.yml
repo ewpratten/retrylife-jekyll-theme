@@ -1,0 +1,35 @@
+
+# Global site configuration
+title: "RetryLife Theme"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://retrylife.ca" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /blog/:year/:month/:day/:slug
+
+# Page configuration
+auto_set_title: true
+enable_page_graphics: true
+default_page_graphic: assets/graphics/innovation__monochromatic.svg
+enable_seo: true
+seo_description:
+
+# Analytics
+ga_analytics: ""
+rtl_analytics: "retrylife.ca-theme"
+
+# Markdown parser config
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  math_engine: mathjax
+highlighter: rouge
+
+# Plugin config
+sass:
+    sass_dir: _sass
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from
+  - jemoji
+  - jekyll-mentions
+  - jekyll-seo-tag
