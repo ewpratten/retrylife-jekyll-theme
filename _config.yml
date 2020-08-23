@@ -7,10 +7,17 @@ permalink: /blog/:year/:month/:day/:slug
 
 # Page configuration
 auto_set_title: true
-enable_page_graphics: true
+enable_page_graphics: false
 default_page_graphic: assets/graphics/innovation__monochromatic.svg
 enable_seo: true
-seo_description:
+primary_color: green
+description: >-
+  This is my site
+navbar:
+  - name: Blog
+    url: /blog
+  - name: About
+    url: /about
 
 # Analytics
 ga_analytics: ""

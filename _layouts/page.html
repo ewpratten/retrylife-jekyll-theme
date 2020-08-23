@@ -1,0 +1,37 @@
+{% include head.html %}
+
+
+<body>
+
+    <div class="site-ctr">
+        <!-- Navbar -->
+        {% include nav.html %}
+
+        <div class="reactive-bg">
+
+            <div class="color-space" id="color-space">
+                <div class="container" style="height:100%; text-align:right">
+                    {% if page.backing_img %}
+                    <img src="{{page.backing_img}}" style="{{page.backing_scalar}};padding-right:5%"></img>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="content-container">
+
+                <div class="title-container container">
+                    <h1>{{page.title}}</h1>
+                    <h4>{{page.description}}</h4>
+                </div><br>
+
+                <div class="inner-content-container container">
+                    {{content}}
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    {% include footer.html %}
+
+</body>

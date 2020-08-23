@@ -1,0 +1,28 @@
+{% include head.html %}
+
+<body>
+
+    <div class="site-ctr">
+        <!-- Navbar -->
+        {% include nav.html %}
+
+        <div class="color-hero">
+            <div class="hello container">
+                <h3 class="grayed">{{page.pretitle}}</h3>
+                <h1 class="home-title">{{page.title}}</h1>
+                <h5 class="grayed">{{page.posttitle}}</h5>
+            </div>
+        </div>
+
+        <div class="home-secondary-panel edge--top">
+            <div class="inner-content-container home-content container">
+                {{content}}
+            </div>
+            
+        </div>
+
+
+    </div>
+    {% include footer.html %}
+
+</body>

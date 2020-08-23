@@ -1,0 +1,46 @@
+---
+---
+
+body{
+    padding:0;
+    margin:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.color-space{
+    height:25vh;
+
+    background-color: var(--color-{{site.primary_color}})!important;
+}
+
+.title-container{
+    margin-top: 6rem;
+
+}
+
+
+.highlight{
+    background-color: var(--light-gray);
+    border-radius:5px;
+    padding: 3px;
+    margin-bottom:0;
+}
+
+img{
+    max-width:99%;
+}
+
+iframe{
+    max-width:99%;
+}
+
+.center{
+    text-align: center;
+}
+
+.foot-info a {
+    color: var(--color-dark-purple);
+}
